@@ -1,0 +1,17 @@
+# SentimentScope — run from project root: streamlit run app.py
+# Python 3.10+ recommended
+
+# Core app (numpy>=2 required for Python 3.13 wheels; avoid 1.26.x source build)
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=2.0.0
+
+# Toolkit: NLP, EDA, ML, DL (use [full] for Streamlit + DL + SHAP/LIME)
+aaryan-ai-toolkit[full]
+
+# Optional: HuggingFace datasets (if loading from HF instead of URL)
+# datasets
+
+# Pin heavy deps for reproducibility (toolkit may pull these; listing for reference)
+# torch, transformers, scikit-learn, spacy, sentence-transformers, gensim,
+# lightgbm, shap, lime, plotly, beautifulsoup4, contractions
